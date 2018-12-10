@@ -1,0 +1,12 @@
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DoAnHCSDL.exe.config
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DoAnHCSDL.exe
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DoAnHCSDL.pdb
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.csprojResolveAssemblyReference.cache
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.Properties.Resources.resources
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.csproj.GenerateResource.Cache
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.exe
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.pdb
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.LoginForm.resources
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DataAccessLayer.dll
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DataAccessLayer.pdb
+D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.MenuForm.resources

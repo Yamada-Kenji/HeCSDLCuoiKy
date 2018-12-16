@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataAccessLayer;
 using DoAnHCSDL.BO;
-using DoAnHCSDL.DO;
+using DoAnHCSDL.DTO;
 
 namespace DoAnHCSDL
 {
@@ -27,19 +27,35 @@ namespace DoAnHCSDL
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            AccountDO account = new AccountDO();
+            DTO_Login account = new DTO_Login();
             account.UserName =  txtUserName.Text;
-            account.Password = txtPassword.Text;
+            account.PassWord = txtPassword.Text;
             SQLAction action = new SQLAction();
             DataSet result = action.Login(account);
             if(result.Tables.Count > 0 && result.Tables[0].Rows.Count > 0)
             {
-                MessageBox.Show("Mã tài khoản là " + result.Tables[0].Rows[0][0].ToString());
+                MessageBox.Show("Đăng nhập thành công","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MenuForm menu = new MenuForm();
+                this.Hide();
+                menu.USERNAME = result.Tables[0].Rows[0][0].ToString();
+                menu.ShowDialog();
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Tên tài khoản hoặc mật khẩu không đúng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tên tài khoản hoặc mật khẩu không đúng!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                load();
+
             }
+        }
+        private void load()
+        {
+            txtPassword.ResetText();
+            txtUserName.ResetText();
+        }
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            load();
         }
     }
 }

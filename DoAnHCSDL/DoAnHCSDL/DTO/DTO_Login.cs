@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoAnHCSDL.DO
+namespace DoAnHCSDL.DTO
 {
-    class AccountDO
+    class DTO_Login
     {
         public string UserName;
-        public string Password;
+        public string PassWord;
+        public string Name;
     }
 }

@@ -10,3 +10,18 @@ D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.LoginForm.resources
 D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DataAccessLayer.dll
 D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DataAccessLayer.pdb
 D:\HeCSDL\CuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.MenuForm.resources
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DoAnHCSDL.exe.config
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DoAnHCSDL.exe
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DoAnHCSDL.pdb
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DataAccessLayer.dll
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\bin\Debug\DataAccessLayer.pdb
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.csprojAssemblyReference.cache
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.LoginForm.resources
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.MenuForm.resources
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.Properties.Resources.resources
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.csproj.GenerateResource.cache
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.csproj.CopyComplete
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.exe
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.pdb
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.AddFood.resources

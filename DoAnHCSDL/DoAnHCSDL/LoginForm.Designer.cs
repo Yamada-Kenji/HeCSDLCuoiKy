@@ -40,9 +40,10 @@
             // lbPhone
             // 
             this.lbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhone.Location = new System.Drawing.Point(142, 289);
+            this.lbPhone.Location = new System.Drawing.Point(106, 235);
+            this.lbPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(190, 30);
+            this.lbPhone.Size = new System.Drawing.Size(142, 24);
             this.lbPhone.TabIndex = 1;
             this.lbPhone.Text = "Mật khẩu";
             this.lbPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -51,9 +52,10 @@
             // 
             this.btLogin.AutoSize = true;
             this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLogin.Location = new System.Drawing.Point(388, 357);
+            this.btLogin.Location = new System.Drawing.Point(291, 290);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(132, 36);
+            this.btLogin.Size = new System.Drawing.Size(111, 32);
             this.btLogin.TabIndex = 2;
             this.btLogin.Text = "Đăng Nhập";
             this.btLogin.UseVisualStyleBackColor = true;
@@ -63,9 +65,10 @@
             // 
             this.btExit.AutoSize = true;
             this.btExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExit.Location = new System.Drawing.Point(580, 357);
+            this.btExit.Location = new System.Drawing.Point(435, 290);
+            this.btExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(132, 36);
+            this.btExit.Size = new System.Drawing.Size(99, 32);
             this.btExit.TabIndex = 3;
             this.btExit.Text = "Thoát";
             this.btExit.UseVisualStyleBackColor = true;
@@ -74,9 +77,10 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(142, 236);
+            this.label1.Location = new System.Drawing.Point(106, 192);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 30);
+            this.label1.Size = new System.Drawing.Size(142, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Tên đăng nhập";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,28 +88,31 @@
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(388, 236);
+            this.txtUserName.Location = new System.Drawing.Point(291, 192);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(324, 30);
+            this.txtUserName.Size = new System.Drawing.Size(244, 26);
             this.txtUserName.TabIndex = 4;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(388, 289);
+            this.txtPassword.Location = new System.Drawing.Point(291, 235);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(324, 30);
+            this.txtPassword.Size = new System.Drawing.Size(244, 26);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.btLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(803, 405);
+            this.ClientSize = new System.Drawing.Size(602, 329);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUserName);
@@ -115,9 +122,11 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

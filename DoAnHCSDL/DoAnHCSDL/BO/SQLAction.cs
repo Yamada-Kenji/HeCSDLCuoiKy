@@ -26,9 +26,10 @@ namespace DoAnHCSDL.BO
         public int AddFood(DTO_Food food)
         {
             int result = -1;
-            string sql = "Exec ThemMon @TenMon, @DanhMuc, @GiaTien, @HinhAnh, @MoTa";
+            string sql = "Exec ThemMon @MaMon,@TenMon, @DanhMuc, @GiaTien, @HinhAnh, @MoTa";
             SqlParameter[] para = new SqlParameter[]
             {
+                new SqlParameter("@MaMon",food.MaMon),
                 new SqlParameter("@TenMon",food.TenMon),
                 new SqlParameter("@DanhMuc",food.DanhMuc),
                 new SqlParameter("@GiaTien",food.GiaTien),
@@ -47,6 +48,17 @@ namespace DoAnHCSDL.BO
             result = data.getdataset(sql);
             return result;
         }
-
+        public DataSet GetFoodInfo(DTO_Food food)
+        {
+            DataSet result = new DataSet();
+            string sql = "exec LayThongTinMonAn @DanhMuc";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@DanhMuc",food.DanhMuc),
+            };
+            DataAccess data = new DataAccess();
+            result = data.getdataset(sql,para);
+            return result;
+        }
     }
 }

@@ -55,6 +55,14 @@ namespace DoAnHCSDL
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(txtMaMon.Text))
+            {
+                lb_MaMon.ForeColor = Color.Red;
+            }
+            else
+            {
+                lb_MaMon.ForeColor = Color.Black;
+            }
             if(string.IsNullOrEmpty(txtTenMon.Text))
             {
                 lb_TenMon.ForeColor = Color.Red;
@@ -87,9 +95,10 @@ namespace DoAnHCSDL
             {
                 lb_DanhMuc.ForeColor = Color.Black;
             }
-            if(lb_DanhMuc.ForeColor == Color.Black && lb_MoTa.ForeColor == Color.Black && lb_GiaTien.ForeColor == Color.Black && lb_TenMon.ForeColor == Color.Black)
+            if (lb_MaMon.ForeColor == Color.Black && lb_DanhMuc.ForeColor == Color.Black && lb_MoTa.ForeColor == Color.Black && lb_GiaTien.ForeColor == Color.Black && lb_TenMon.ForeColor == Color.Black)
             {
                 DTO_Food addfood = new DTO_Food();
+                addfood.MaMon = txtMaMon.Text;
                 addfood.TenMon = txtTenMon.Text;
                 addfood.DanhMuc = cbb_DanhMuc.Text;
                 addfood.MoTa = txtMoTa.Text;

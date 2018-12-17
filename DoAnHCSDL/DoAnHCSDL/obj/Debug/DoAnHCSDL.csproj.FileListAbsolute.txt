@@ -25,3 +25,4 @@ C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\Do
 C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.exe
 C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.pdb
 C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.AddFood.resources
+C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DoAnHCSDL\obj\Debug\DoAnHCSDL.ChooseFood.resources

@@ -8,6 +8,7 @@ namespace DoAnHCSDL.DTO
 {
     class DTO_Food
     {
+        public string MaMon;
         public string TenMon;
         public int GiaTien;
         public string MoTa;

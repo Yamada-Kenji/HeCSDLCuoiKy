@@ -41,6 +41,8 @@
             this.lb_DanhMuc = new System.Windows.Forms.Label();
             this.cbb_DanhMuc = new System.Windows.Forms.ComboBox();
             this.txtGiaTien = new System.Windows.Forms.TextBox();
+            this.txtMaMon = new System.Windows.Forms.TextBox();
+            this.lb_MaMon = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pHinh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             // 
             this.lb_TenMon.AutoSize = true;
             this.lb_TenMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_TenMon.Location = new System.Drawing.Point(42, 53);
+            this.lb_TenMon.Location = new System.Drawing.Point(42, 95);
             this.lb_TenMon.Name = "lb_TenMon";
             this.lb_TenMon.Size = new System.Drawing.Size(83, 20);
             this.lb_TenMon.TabIndex = 0;
@@ -57,7 +59,7 @@
             // txtTenMon
             // 
             this.txtTenMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtTenMon.Location = new System.Drawing.Point(136, 50);
+            this.txtTenMon.Location = new System.Drawing.Point(136, 92);
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(283, 26);
             this.txtTenMon.TabIndex = 1;
@@ -66,7 +68,7 @@
             // 
             this.lb_GiaTien.AutoSize = true;
             this.lb_GiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_GiaTien.Location = new System.Drawing.Point(42, 93);
+            this.lb_GiaTien.Location = new System.Drawing.Point(42, 135);
             this.lb_GiaTien.Name = "lb_GiaTien";
             this.lb_GiaTien.Size = new System.Drawing.Size(77, 20);
             this.lb_GiaTien.TabIndex = 2;
@@ -75,7 +77,7 @@
             // txtMoTa
             // 
             this.txtMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtMoTa.Location = new System.Drawing.Point(136, 184);
+            this.txtMoTa.Location = new System.Drawing.Point(136, 226);
             this.txtMoTa.Multiline = true;
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Size = new System.Drawing.Size(283, 118);
@@ -85,7 +87,7 @@
             // 
             this.lb_MoTa.AutoSize = true;
             this.lb_MoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_MoTa.Location = new System.Drawing.Point(42, 184);
+            this.lb_MoTa.Location = new System.Drawing.Point(42, 226);
             this.lb_MoTa.Name = "lb_MoTa";
             this.lb_MoTa.Size = new System.Drawing.Size(63, 20);
             this.lb_MoTa.TabIndex = 4;
@@ -124,7 +126,7 @@
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnLuu.Location = new System.Drawing.Point(254, 329);
+            this.btnLuu.Location = new System.Drawing.Point(254, 378);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(102, 28);
             this.btnLuu.TabIndex = 6;
@@ -135,7 +137,7 @@
             // btnHuy
             // 
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnHuy.Location = new System.Drawing.Point(458, 329);
+            this.btnHuy.Location = new System.Drawing.Point(458, 378);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(102, 28);
             this.btnHuy.TabIndex = 7;
@@ -147,7 +149,7 @@
             // 
             this.lb_DanhMuc.AutoSize = true;
             this.lb_DanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_DanhMuc.Location = new System.Drawing.Point(42, 133);
+            this.lb_DanhMuc.Location = new System.Drawing.Point(42, 175);
             this.lb_DanhMuc.Name = "lb_DanhMuc";
             this.lb_DanhMuc.Size = new System.Drawing.Size(90, 20);
             this.lb_DanhMuc.TabIndex = 11;
@@ -157,7 +159,7 @@
             // 
             this.cbb_DanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbb_DanhMuc.FormattingEnabled = true;
-            this.cbb_DanhMuc.Location = new System.Drawing.Point(136, 133);
+            this.cbb_DanhMuc.Location = new System.Drawing.Point(136, 175);
             this.cbb_DanhMuc.Name = "cbb_DanhMuc";
             this.cbb_DanhMuc.Size = new System.Drawing.Size(199, 28);
             this.cbb_DanhMuc.TabIndex = 12;
@@ -165,18 +167,38 @@
             // txtGiaTien
             // 
             this.txtGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtGiaTien.Location = new System.Drawing.Point(136, 90);
+            this.txtGiaTien.Location = new System.Drawing.Point(136, 132);
             this.txtGiaTien.Name = "txtGiaTien";
             this.txtGiaTien.Size = new System.Drawing.Size(172, 26);
             this.txtGiaTien.TabIndex = 2;
             this.txtGiaTien.TextChanged += new System.EventHandler(this.txtGiaTien_TextChanged);
             this.txtGiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaTien_KeyPress);
             // 
+            // txtMaMon
+            // 
+            this.txtMaMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMaMon.Location = new System.Drawing.Point(136, 50);
+            this.txtMaMon.Name = "txtMaMon";
+            this.txtMaMon.Size = new System.Drawing.Size(142, 26);
+            this.txtMaMon.TabIndex = 14;
+            // 
+            // lb_MaMon
+            // 
+            this.lb_MaMon.AutoSize = true;
+            this.lb_MaMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_MaMon.Location = new System.Drawing.Point(42, 53);
+            this.lb_MaMon.Name = "lb_MaMon";
+            this.lb_MaMon.Size = new System.Drawing.Size(77, 20);
+            this.lb_MaMon.TabIndex = 13;
+            this.lb_MaMon.Text = "Mã món:";
+            // 
             // AddFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtMaMon);
+            this.Controls.Add(this.lb_MaMon);
             this.Controls.Add(this.txtGiaTien);
             this.Controls.Add(this.cbb_DanhMuc);
             this.Controls.Add(this.lb_DanhMuc);
@@ -214,5 +236,7 @@
         private System.Windows.Forms.Label lb_DanhMuc;
         private System.Windows.Forms.ComboBox cbb_DanhMuc;
         private System.Windows.Forms.TextBox txtGiaTien;
+        private System.Windows.Forms.TextBox txtMaMon;
+        private System.Windows.Forms.Label lb_MaMon;
     }
 }

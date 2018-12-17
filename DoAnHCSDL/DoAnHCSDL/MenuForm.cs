@@ -70,9 +70,7 @@ namespace DoAnHCSDL
                             
                         }
                         pl_Menu.Controls.Add(pl);
-
-                    };
-                    
+                    };       
                 }
             }
         }

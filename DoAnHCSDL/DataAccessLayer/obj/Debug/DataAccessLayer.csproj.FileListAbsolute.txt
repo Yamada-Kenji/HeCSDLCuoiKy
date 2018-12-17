@@ -3,9 +3,3 @@ D:\OOP\Windows Form Example\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
 D:\OOP\Windows Form Example\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\OOP\Windows Form Example\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 D:\OOP\Windows Form Example\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
-C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DataAccessLayer\bin\Debug\DataAccessLayer.dll
-C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
-C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
-C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DataAccessLayer\obj\Debug\DataAccessLayer.dll
-C:\Users\Windows 10\Desktop\GitHub\HeCSDLCuoiKy\DoAnHCSDL\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

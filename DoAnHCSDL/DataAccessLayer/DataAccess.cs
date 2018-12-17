@@ -5,52 +5,95 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
+
 namespace DataAccessLayer
 {
     public class DataAccess
     {
-        SqlConnection connect = null;
-        Exception error;
+        SqlConnection connection = null;
+        private Exception error = null;
+        public Exception Error
+        {
+            get
+            {
+                return error;
+            }
+        }
         public DataAccess()
         {
-            string connectString = @"Data Source=DESKTOP-SJULKJC;Initial Catalog=MsChauMilkTea_DB;Integrated Security=True ";
-            connect = new SqlConnection(connectString);
+            SqlConnectionStringBuilder connectionBuilder = new SqlConnectionStringBuilder();
+
+            connectionBuilder.DataSource = ConfigurationSettings.AppSettings["Server"];
+            connectionBuilder.InitialCatalog = ConfigurationSettings.AppSettings["Database"];
+            connectionBuilder.UserID = ConfigurationSettings.AppSettings["UserID"];
+            connectionBuilder.Password = ConfigurationSettings.AppSettings["Password"];
+            connectionBuilder.IntegratedSecurity = ConfigurationSettings.AppSettings["IntergratedSecurity"] == "true";
+
+            connection = new SqlConnection(connectionBuilder.ConnectionString);
 
         }
-        public int Execute(string cmdtext, params SqlParameter[] para)
+        public SqlDataReader GetReader(string sqlCommand)
+        {
+            error = null;
+            try
+            {
+                SqlCommand command = new SqlCommand(sqlCommand);
+                command.Connection = connection;
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+
+                return reader;
+            }
+            catch (Exception ex)
+            {
+                error = ex;
+                if (connection != null && connection.State != ConnectionState.Closed)
+                {
+                    connection.Close();
+                }
+                return null;
+            }
+        }
+
+        public int Execute(string commandText, params SqlParameter[] parameters)
         {
             int result = -1;
+            error = null;
             try
             {
-                SqlCommand cmd = new SqlCommand(cmdtext, connect);
-                cmd.Parameters.AddRange(para);
-                connect.Open();
-                result = cmd.ExecuteNonQuery();
+                SqlCommand command = new SqlCommand(commandText);
+                command.Parameters.AddRange(parameters);
+                command.Connection = connection;
+
+                connection.Open();
+
+                result = command.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                error = ex;
+                error = ex;       
             }
             finally
             {
-                if (connect != null && connect.State != ConnectionState.Closed)
+                if (connection != null && connection.State != ConnectionState.Closed)
                 {
-                    connect.Close();
+                    connection.Close();
                 }
-
             }
             return result;
         }
-        public DataSet getdataset(string sqlcmd, params SqlParameter[] para)
+        public DataSet GetDataSet(string commandText, params SqlParameter[] parameters)
         {
-            Exception error;
             DataSet result = new DataSet();
+            error = null;
             try
             {
-                connect.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(sqlcmd, connect);
-                adapter.SelectCommand.Parameters.AddRange(para);
-                adapter.Fill(result);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(commandText, connection);
+                dataAdapter.SelectCommand.Parameters.AddRange(parameters);
+                connection.Open();
+                dataAdapter.Fill(result);
             }
             catch (Exception ex)
             {
@@ -58,17 +101,12 @@ namespace DataAccessLayer
             }
             finally
             {
-                if (connect != null & connect.State != ConnectionState.Closed)
+                if (connection != null && connection.State != ConnectionState.Closed)
                 {
-                    connect.Close();
+                    connection.Close();
                 }
             }
             return result;
-
         }
     }
-
 }
-
-
-

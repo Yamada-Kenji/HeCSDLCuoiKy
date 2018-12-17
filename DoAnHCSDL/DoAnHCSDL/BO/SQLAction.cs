@@ -21,7 +21,7 @@ namespace DoAnHCSDL.BO
                  new SqlParameter("@PassWord", account.PassWord),
             };
             DataAccess data = new DataAccess();
-            return data.getdataset(sql, para);
+            return data.GetDataSet(sql, para);
         }
         public int AddFood(DTO_Food food)
         {
@@ -45,7 +45,7 @@ namespace DoAnHCSDL.BO
             DataSet result = new DataSet();
             string sql = "Exec LayTatCaDanhMuc";
             DataAccess data = new DataAccess();
-            result = data.getdataset(sql);
+            result = data.GetDataSet(sql);
             return result;
         }
         public DataSet GetFoodInfo(DTO_Food food)
@@ -57,7 +57,7 @@ namespace DoAnHCSDL.BO
                 new SqlParameter("@DanhMuc",food.DanhMuc),
             };
             DataAccess data = new DataAccess();
-            result = data.getdataset(sql,para);
+            result = data.GetDataSet(sql,para);
             return result;
         }
     }

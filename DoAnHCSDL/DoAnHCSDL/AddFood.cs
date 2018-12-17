@@ -48,7 +48,7 @@ namespace DoAnHCSDL
             DataSet table = LayDanhMuc.GetCategory();
             for (int i = 0; i < table.Tables[0].Rows.Count; i++)
             {
-                cbb_DanhMuc.Items.Add(table.Tables[0].Rows[0][i].ToString());
+                cbb_DanhMuc.Items.Add(table.Tables[0].Rows[i][0].ToString());
             }
             
 

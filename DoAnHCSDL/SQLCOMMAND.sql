@@ -5,14 +5,18 @@ go
 
 execute DangNhap YukiHai , asdasd123
 go 
-create proc ThemMon @TenMon nvarchar(50) , @DanhMuc nvarchar(50), @GiaTien int, @HinhAnh image , @MoTa nvarchar(1000)
+alter proc ThemMon @MaMon nvarchar(50) ,@TenMon nvarchar(50) , @DanhMuc nvarchar(50), @GiaTien int, @HinhAnh image , @MoTa nvarchar(1000)
 as
-insert into Menu values (@TenMon,@DanhMuc,@GiaTien,@HinhAnh,@MoTa)
+insert into Menu values (@MaMon,@TenMon,@DanhMuc,@GiaTien,@HinhAnh,@MoTa)
 go
 
-create proc LayTatCaDanhMuc 
+alter proc LayTatCaDanhMuc 
 as
 select distinct DanhMuc from Menu 
 go
 
-select * from Menu where DanhMuc = 'Coffe'
+alter proc LayThongTinMonAn @DanhMuc nvarchar(50)
+as
+select * from Menu where DanhMuc like @DanhMuc
+go
+select * from Menu

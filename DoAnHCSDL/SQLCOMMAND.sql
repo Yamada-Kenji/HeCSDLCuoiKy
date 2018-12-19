@@ -15,4 +15,14 @@ as
 select distinct DanhMuc from Menu 
 go
 
-select * from Menu where DanhMuc = 'Coffe'
+create proc ThemVaoBangTam @MaMonAn nvarchar(50), @TenMon nvarchar(50), @SoLuong int , @ThanhTien int
+as
+insert into Temp_Cart values(@MaMonAn,@TenMon,@SoLuong,@ThanhTien)
+go
+create proc XoaKhoiBangTam @MaMonAn nvarchar(50)
+as delete from Temp_Cart where MaMonAn = @MaMonAn
+go
+create proc LayDuLieu
+as
+select * from Temp_Cart
+go

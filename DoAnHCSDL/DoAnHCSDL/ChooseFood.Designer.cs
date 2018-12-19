@@ -111,7 +111,6 @@
             this.txtSoluong.ReadOnly = true;
             this.txtSoluong.Size = new System.Drawing.Size(31, 29);
             this.txtSoluong.TabIndex = 7;
-            this.txtSoluong.Text = "0";
             this.txtSoluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ChooseFood

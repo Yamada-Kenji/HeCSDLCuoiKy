@@ -60,5 +60,40 @@ namespace DoAnHCSDL.BO
             result = data.GetDataSet(sql,para);
             return result;
         }
+        public int AddCart(DTO_Food food)
+        {
+            int result = -1;
+            string sql = "exec ThemVaoBangTam @MaMonAn, @TenMon,@SoLuong,@ThanhTien";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@MaMonAn",food.MaMon),
+                new SqlParameter("@TenMon",food.TenMon),
+                new SqlParameter("@SoLuong",food.SoLuong),
+                new SqlParameter("ThanhTien",food.GiaTien),
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(sql, para);
+            return result;
+        }
+        public int DeleteCart(DTO_Food food)
+        {
+            int result = -1;
+            string sql = "exec XoaKhoiBangTam @MaMonAn";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@MaMonAn",food.MaMon),
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(sql, para);
+            return result;
+        }
+        public DataSet GetDataTable()
+        {
+            DataSet result = null;
+            string sql = "exec LayDuLieu";
+            DataAccess data = new DataAccess();
+            result = data.GetDataSet(sql);
+            return result;
+        }
     }
 }

@@ -14,6 +14,5 @@ namespace DoAnHCSDL.DTO
         public string MoTa;
         public string DanhMuc;
         public byte[] HinhAnh;
-        public int SoLuong;
     }
 }

@@ -128,14 +128,6 @@ namespace DoAnHCSDL
                 MessageBox.Show("Điền thiếu thông tin, vui lòng kiểm tra lại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private string username;
-        public string USERNAME
-        {
-            set
-            {
-                username = value;
-            }
-        }
 
         private void AddFood_Load(object sender, EventArgs e)
         {
@@ -168,10 +160,6 @@ namespace DoAnHCSDL
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MenuForm menu = new MenuForm();
-            menu.USERNAME = username;
-            menu.ShowDialog();
             this.Close();
         }
     }
